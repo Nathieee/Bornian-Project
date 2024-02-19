@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="home.html"><img src="./images/logo option 2.jpeg" alt="Logo"></a>
+                <a href="home.html">Bornian pharmaceuticals</a>
+            </div>
+            <div class="nav-mid">
+                <a href="home.html">Home</a>
+                <a href="Doctor.html">Doctors</a>
+                <a href="#">Services</a>
+                <a href="bookAppointment.html">Book An Appointment</a>
+            </div>
+            <div class="nav-right">
+                <a href="register.html">Get Started</a>
+            </div>
+        </nav>
+    </header>
+    <div class="doctor-banner">
+        <div class="banner-layer">
+            <h1>Doctors</h1>
+            <p>Home / Doctors</p>
+        </div>
+    </div>
+    <main class="appointment_main">
+        <div id="myModal" class="modal">
+            <div class="modal-content" id="modalContent">
+              <span class="close">&times;</span>
+              <h2>Modal Title</h2>
+              <p>Thanks for choosing <b>Bornian pharmaceuticals.</b> Your appointment has been booked. Kindly ensure to take a screenshot for future references at our hospital.</p>              
+              <!-- <h3>Name</h3>
+              <h3>Date</h3>
+              <h3>Time</h3>                    -->
+            </div>
+        </div>
+        <form class="appointment_form">
+            <h2>Get Appointment</h2>
+            <div class="row1">
+                <div class="left">
+                    <div class="single-input">
+                        <i class='bx bxs-user' style='color:#26AEEF'></i>
+                        <input type="text" placeholder="Full Name" id="name">
+                    </div><br>
+                    <p class="nameErr"></p>
+                </div>
+                <div class="right">
+                    <div class="single-input">
+                        <i class='bx bxs-phone-call' style='color:#26AEEF' ></i>
+                        <input type="text" placeholder="Phone" id="phoneNumber">
+                    </div><br>
+                    <p class="phoneErr"></p>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <div class="single-input" style="width: 95%;">
+                        <i class='bx bxs-envelope' style='color:#26AEEF'></i>
+                        <input type="text" placeholder="Email" id="email">
+                    </div><br>
+                    <p class="emailErr"></p>
+                </div>
+                <select id="gender">
+                    <option value="">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <p class="genderErr"></p>
+            <div class="row3">
+                <div class="left">
+                    <input type="date" id="date">
+                    <p class="dateErr"></p>
+                </div>
+                <div class="right">
+                    <div class="single-input">
+                        <input type="time" id="time">
+                    </div>
+                    <p class="timeErr"></p>
+                </div>
+            </div>
+            <div class="single-input_" style="width: 90%; margin: auto;">
+                <i class="fa-solid fa-square-pen" style="color: #26AEEF; margin-top: -115px;"></i>
+                <textarea name="
+                " id="textarea" cols="30" rows="10" placeholder="Write your Message"></textarea>
+            </div>
+            <p class="textErr"></p>
+            <button id="appointment_Btn">Submit <i class='bx bxs-paper-plane' style='color: #fff'></i></button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="footer">
+                <div class="footer1">
+                    <h3>Quick Links</h3>
+                    <p></p>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Appointment</li>
+                        <li>Doctors</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer2">
+                    <h3>Help</h3>
+                    <p></p>
+                    <ul>
+                        <li>Help center</li>
+                        <li>Patient support</li>
+                        <li>Live Chat</li>
+                        <li>Sitemap</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer3">
+                    <h3>Our Community</h3>
+                    <p></p>
+                    <ul>
+                        <li>Forums</li>
+                        <li>Community Hub</li>
+                        <li>Meetup</li>
+                        <li>About Us</li>
+                        <li>Help Center</li>
+                    </ul>
+                </div>
+                <div class="footer4">
+                    <div id="logo-footer">
+                        <a href="index.html"><img src="./images/media_result_20230517_ec3f0c68-34fd-44fc-ad15-bf5a01d3efc3.png" alt="Logo"></a>
+                        <a href="index.html">Bornian pharmaceuticals</a>
+                    </div>
+                    <p><i class="fa-solid fa-location-dot" style="color: #ffff;"></i> Road No- 6, House- 25/A Abuja.</p>
+                    <p><i class='bx bxs-phone-call' style='color:#ffff'></i> + 90 581 962 71</p>
+                    <p><i class='bx bxs-envelope' style='color:#fff'></i> Bornian@info.com</p>
+                    <p><i class='bx bx-globe' style='color:#fff'></i> www.bornian.com</p>
+                </div>
+            </div>
+            <div class="footer-top">
+                <h4>Follow Us</h4>
+                <div class="footer-email">
+                    <p><i class='bx bxl-facebook' style='color:#ffff'></i> <i class='bx bxl-pinterest' style='color:#ffff'></i> <i class='bx bxl-instagram' style='color:#ffff'></i> <i class='bx bxl-twitter' style='color:#ffff'></i> <i class='bx bx-plus-medical'  style='color:#ffff'></i></p>
+                    <label>
+                        <input type="email" placeholder="Enter Your Email">
+                        <button><i class='bx bxs-paper-plane' style='color:#ffff'></i></button>
+                    </label>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>BornianTheme All Right Reserved</p>
+                <div class="footer-bottom_">
+                    <p>About Bornian</p>
+                    <p>Privacy Policy</p>
+                    <p>Help Center</p>
+                    <p>Terms</p>
+                    <p>Site Map</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="appointment.js"></script>
+<script src="https://kit.fontawesome.com/1a87c8eb3d.js" crossorigin="anonymous"></script>
+</html>

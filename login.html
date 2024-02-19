@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title">Modal Title</h2>
+          <p id="modal-info">Thanks for choosing <b>Bornian pharmaceuticals.</b> You get to do a self diagnosis and get prescriptions, if your situation is not serious and you do not want to book an appointment immediately. Main page would be shown in a few seconds. Goodluck!🎉</p>
+        </div>
+    </div>
+      
+    <main id="login-main">
+        <form id="login-form"> 
+            <img src="./images/media_result_20230517_ec3f0c68-34fd-44fc-ad15-bf5a01d3efc3.png" alt="">
+            <h1>LOGIN</h1>          
+            <label>Email:</label>
+            <input type="text" id="login_Email"><br>
+            <span id="emailErr"></span>
+            <div class="password-div">
+                <label>Password:</label>
+                <input type="password" id="login_Password"><br>
+                <span id="passwordErr"></span>
+            </div>
+            <button type="button" id="loginBtn" onclick="handleLogin(event)">Login</button>
+        </form>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
